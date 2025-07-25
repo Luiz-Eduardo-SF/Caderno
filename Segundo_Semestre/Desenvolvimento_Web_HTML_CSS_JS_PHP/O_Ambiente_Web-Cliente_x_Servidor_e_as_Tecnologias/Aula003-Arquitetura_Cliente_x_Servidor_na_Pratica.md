@@ -2,27 +2,7 @@
 
 Neste exemplo, temos um site com um formulário com as seguintes características:
 
-<style>
-    img{
-        width: 100%;
-    }
-
-    img.codes{
-        width: 100%;
-    }
-    @media (min-width: 720px){
-        img{
-            width: 70%;
-        }
-    }
-    @media (min-width: 1000px){
-        img{
-            width: 50%;
-        }
-    } 
-
-</style>
-<img src="img/Aula003-form_HTML.png">
+<img src="img/Aula003-form_HTML.png" width="100%">
 
 ---
 
@@ -40,7 +20,7 @@ Neste exemplo, temos um site com um formulário com as seguintes característica
 
 **5-** A página do cliente (da resposta) mostra uma mensagem de boas-vindas.
 
-<img src="img/Aula003-form_HTML_result.png">
+<img src="img/Aula003-form_HTML_result.png" width="100%">
 
 ---
 
@@ -58,7 +38,7 @@ Vamos ver dois métodos de envio de dados:
 |id=9|
 |cod=96|
 
-<img src="img/Aula003-Metodo_GET.png">
+<img src="img/Aula003-Metodo_GET.png" width="100%">
 
 ---
 
@@ -70,7 +50,7 @@ Vamos ver dois métodos de envio de dados:
 
 &rarr; Portanto, o endereço não é alterado.
 
-<img src="img/Aula003-Metodo_POST.png">
+<img src="img/Aula003-Metodo_POST.png" width="100%">
 
 > **OBS:** É importante ficar atento ao método de envio. 
 
@@ -90,7 +70,7 @@ Vamos ver dois métodos de envio de dados:
 
 ## 🎨 Demonstração Front-end
 
-<img class="codes" src="img/Aula003-HTML_Code.png">
+<img src="img/Aula003-HTML_Code.png" width="100%">
 
 ---
 
@@ -112,7 +92,7 @@ Vamos ver dois métodos de envio de dados:
 
 ## 🖥️ Demonstração Back-end
 
-<img class="codes" src="img/Aula003-PHP_Code.png">
+<img  src="img/Aula003-PHP_Code.png" width="100%">
 
 ---
 
