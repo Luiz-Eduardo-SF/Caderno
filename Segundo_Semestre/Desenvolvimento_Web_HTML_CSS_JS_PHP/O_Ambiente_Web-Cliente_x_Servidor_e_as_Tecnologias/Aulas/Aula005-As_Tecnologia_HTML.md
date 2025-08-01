@@ -1,21 +1,21 @@
-# As Tecnologias HTML
+# 📝 As Tecnologias HTML
 
-## Sobre
+## ℹ️ Sobre
 
-- HTML (Hypertext Markup Language) é uma linguagem de marcação utilizada para estruturar e exibir conteúdo na web, como textos, imagens, vídeos, links e tabelas.
+- HTML (Hypertext Markup Language) é uma linguagem de marcação utilizada para estruturar e exibir conteúdo na web, como textos, imagens, vídeos, links e tabelas.
 
-- É amplamente utilizada para criar páginas web e aplicações web dinâmicas. 
+- É amplamente utilizada para criar páginas web e aplicações web dinâmicas.
 
-- HTML não é uma linguagem de programação.
+- HTML não é uma linguagem de programação.
 
-- Apesar de conseguirmos aplicar estilos na linguagem de marcação HTML, o CSS é mais adequado para estilização de documentos HTML.
+- Apesar de ser possível aplicar estilos na linguagem de marcação HTML, o CSS é mais adequado para a estilização de documentos HTML.
 
-- O HTML já tem diversas tags prontas para uso.
+- O HTML já possui diversas tags prontas para uso.
 
---- 
+---
 
-## Exemplos
+## 💡 Exemplos
 
-- O exemplo dessa aula pode ser encontrado na pasta de exemplos (Anexo-aula005).
+- O exemplo desta aula pode ser encontrado na pasta de exemplos (Anexo-aula005).
 
 - Explicado no próprio código.
