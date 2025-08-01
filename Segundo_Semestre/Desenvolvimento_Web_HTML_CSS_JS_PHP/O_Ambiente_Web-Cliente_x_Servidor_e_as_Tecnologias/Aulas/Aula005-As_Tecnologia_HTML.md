@@ -16,4 +16,6 @@
 
 ## Exemplos
 
-- O exemplo dessa aula pode ser encontrado na pasta [Exemplos](Exemplos_Praticos)
+- O exemplo dessa aula pode ser encontrado na pasta de exemplos (Anexo-aula005).
+
+- Explicado no próprio código.
