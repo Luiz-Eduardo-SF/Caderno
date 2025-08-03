@@ -42,7 +42,7 @@
 - Neste exemplo, usei uma resolução de 1366x768.
     - Podemos observar que as informações estão à esquerda da minha imagem, que por sua vez está em um formato quadrado.
 
-<img src="img/Aula004-Computador.png">
+<img src="../img/Aula004-Computador.png">
 
 ---
 
@@ -51,7 +51,7 @@
 - Já neste exemplo, estou usando uma resolução horizontal menor, semelhante à maioria dos smartphones.
     - Notamos claramente a diferença na imagem, que agora está arredondada e com uma luz de fundo. As informações estão abaixo para não ficarem distorcidas.
 
-<img src="img/Aula004-Mobile.png">
+<img src="../img/Aula004-Mobile.png">
 
 ---
 

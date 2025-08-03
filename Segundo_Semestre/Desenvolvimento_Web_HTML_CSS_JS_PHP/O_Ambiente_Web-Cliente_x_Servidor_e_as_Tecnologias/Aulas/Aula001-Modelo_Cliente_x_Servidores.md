@@ -49,6 +49,6 @@ Ao clicar em "enter", sua solicitação será enviada ao servidor que hospeda a 
 
 ---
 
-<img src="img/Aula001-Cliente_x_Servidor_Exemplo.png" width="100%"></img>
+<img src="../img/Aula001-Cliente_x_Servidor_Exemplo.png" width="100%"></img>
 
 > Diagrama feito por mim no site [diagrams.net](https://app.diagrams.net/)
