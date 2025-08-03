@@ -24,3 +24,5 @@ Assim como CSS temos os mesmos tipos de aplicações
         alert('Hello World!')
     </script>
     ```
+
+    ---
