@@ -25,4 +25,11 @@ Assim como CSS temos os mesmos tipos de aplicações
     </script>
     ```
 
-    ---
+---
+
+## Exemplos
+
+Como de costume, eu fiz alguns exemplos, onde pode encontrar na pasta de exemplos no anexo dessa aula. Separei em 3 arquivos, pois eu queria mostrar o uso de cada uma das aplicações.
+
+É um exemplo simples de uma lâmpada que "apaga" e "acende" ao clicar nos botões.<br>
+Todos os sites são bem parecidos, mas o modo que o código foi escrito é diferente.

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interno</title>
+</head>
+<body>
+    <h1>Exemplo Interno</h1>
+    <button id="apgButton">Apagar</button>
+    <img id="lamp" src="img/apagada.png" alt="lampd">
+    <button id="acdButton">Acender</button>
+
+    <script>
+        function apagar() {
+            document.getElementById('lamp').src = 'img/apagada.png';
+        }
+        function acender() {
+            document.getElementById('lamp').src = 'img/acessa.png';
+        }
+
+        document.getElementById('apgButton').addEventListener('click', apagar);
+        document.getElementById('acdButton').addEventListener('click', acender);
+    </script>
+</body>
+</html>
