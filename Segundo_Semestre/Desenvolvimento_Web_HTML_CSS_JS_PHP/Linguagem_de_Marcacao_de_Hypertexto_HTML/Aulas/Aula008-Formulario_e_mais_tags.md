@@ -1,6 +1,6 @@
 # 📝 Formularios HTML
 
-## 📚 O que vamos abordar?
+## 📚 O que vamos abordar? 📖
 
 - A estrutura do formulário
 - Elementos e atributos do formulário
@@ -121,6 +121,21 @@ Como exemplo, vamos usar a seguinte estrutura que aborda diversos elementos do f
 
 ---
 
-## ⚠️ Aviso
+## 🏷️ Mais algumas tags
 
-Como consegui fazer grande parte das anotações físicas até o final do dia, sinto que o conteúdo não foi 100% entregue de forma correta. Portanto, amanhã vou revisar mais sobre essa aula e atualizar este conteúdo de uma forma melhor. Obrigado pela compreensão, bons estudos a todos!
+|Tags|Funções|
+|:--:|:--:|
+|`<textarea>`|Campo de texto de múltiplas linhas|
+|`<select>` e <br> `<option>`|Campos de seleção, onde o container é definido pela tag `<select>` e os itens pela tag `<option>`|
+|`<button>`|Campo de botão. Permite que uma ação seja executada no formulário - enviar o formulário, limpar os dados etc.|
+|`<label>`|Campo usado para definir um título, uma legenda, que descreve para que serve cada campo do formulário.|
+|`<option> value`|Define o valor do campo, e também pode ser utilizado na tag `<input>`. No caso da `<option>`, seus valores possíveis são previamente definidos quando a página é codificada. Já na `<input>`, embora também possa ser previamente definido, normalmente é o usuário quem define o seu valor.|
+
+---
+
+## ✅ Conclusão
+
+- Os formulários HTML podem ser usados para interagir com o usuário e enviar dados para um servidor.
+- Existem diversas tags que ajudam a construir formulários, e cada uma tem seus atributos e comportamentos.
+
+> Recomendo bastante que pratiquem sempre, principalmente o conteúdo desta aula.
