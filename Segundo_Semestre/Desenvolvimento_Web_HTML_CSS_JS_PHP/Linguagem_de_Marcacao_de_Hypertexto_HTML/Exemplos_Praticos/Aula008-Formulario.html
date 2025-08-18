@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="/pagina-processa-dados-do-form">
+        <fieldset>
+            <legend>Dados Gerais</legend>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome">
+
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento">
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+
+            <label for="tipo_endereco">Tipo:</label>
+            <select id="tipo_endereco">
+                <option value="">Selecione</option>
+                <option value="">Rua</option>
+                <option value="">Estrada</option>
+                <option value="">Avenida</option>
+                <option value="">Outros</option>
+            </select>
+
+            <label for="logradouro_endereco">Logradouro:</label>
+            <input type="text" id="logradouro_endereco">
+
+            <label for="numero_endereco">Número:</label>
+            <input type="text" id="numero_endereco">
+
+            <label for="complemento_endereco">Complemento:</label>
+            <input type="text" id="complemento_endereco">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Fale conosco</legend>
+            
+            <label for="msg">Mensagem:</label>
+            <textarea type="text" id="msg"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <button type="submit">Enviar sua mensagem</button>
+            <button type="reset">Limpar formulário</button>
+        </fieldset>
+    </form>
+</body>
+</html>
