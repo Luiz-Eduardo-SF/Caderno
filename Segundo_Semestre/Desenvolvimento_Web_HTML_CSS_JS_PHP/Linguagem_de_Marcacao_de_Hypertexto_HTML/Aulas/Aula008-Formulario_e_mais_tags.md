@@ -139,3 +139,9 @@ Como exemplo, vamos usar a seguinte estrutura que aborda diversos elementos do f
 - Existem diversas tags que ajudam a construir formulários, e cada uma tem seus atributos e comportamentos.
 
 > Recomendo bastante que pratiquem sempre, principalmente o conteúdo desta aula.
+
+---
+
+> OBS: Eu pretendo colocar umas imagens futuramente para ilustrar melhor os exemplos, mas por agora, vou deixar sem as imagens pois não estão com muito tempo. Obrigado.
+
+---
