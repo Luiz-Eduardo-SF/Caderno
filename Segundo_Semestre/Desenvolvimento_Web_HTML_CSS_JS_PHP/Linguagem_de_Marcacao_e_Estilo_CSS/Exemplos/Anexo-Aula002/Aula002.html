@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula002 Aplicando CSS</title>
+
+    <style>
+        /* Aplica margem e preenchimento zero para todos os elementos */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Define a cor de fundo do body */
+        body{
+            background-color: #a45eff;
+        }
+
+        /* Estiliza a linha horizontal */
+        hr{
+            width:80%;
+            margin:10px auto;
+        }
+
+        /* Estiliza as divs com a classe box */
+        div.box{
+            display:flex; /* Usa flexbox para layout */
+            flex-direction:column; /* Direção dos itens em coluna */
+            background-color:rgb(238, 235, 255); /* Cor de fundo */
+            width: 90%; /* Largura da caixa */
+            margin: 10px auto; /* Margem externa */
+            padding:50px 30px; /* Preenchimento interno */
+            justify-content: center; /* Alinha horizontalmente */
+            align-items:center; /* Alinha verticalmente */
+            border-radius:50px; /* Bordas arredondadas */
+            box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+        }
+
+        /* Estiliza o elemento code */
+        code{
+            background-color: rgb(47, 47, 47); /* Cor de fundo */
+            color: rgb(255, 255, 255); /* Cor do texto */
+            padding: 3px; /* Espaçamento interno */
+        }
+
+        /* Adiciona margem aos itens da lista */
+        li{
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box">
+            <h1>Estilizando com CSS</h1>
+            <hr>
+            <p>Explicando os estilos e as tags do site!!!</p>
+        </div>
+
+        <div class="box">
+            <h2>Sobre as Tags</h2>
+            <hr>
+            <h3>Nessa aula eu estou utilizando diversas tags</h3>
+            <hr>
+            <ul>
+                <li><code>&lt;main&gt;</code> - Usada para definir o conteudo principal da pagina</li> 
+                <li><code>&lt;div&gt;</code> - Usada para definir um bloco de conteudo</code></li>
+                <li><code>&lt;code&gt;</code> - Usada para definir um trecho de codigo</li>
+                <li><code>&lt;hr&gt;</code> - Usada para defini uma linha horizontal</code></li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>Estilizando com CSS</h2>
+            <hr>
+            <h3>Explicando os estilos e as tags do site!!!</h3>
+            <hr>
+            <ul>
+                <li><code>div.box</code> - Aplica o estilo nas tags &lt;div&gt; que faz parte da classe "box"</li>
+                <li><code>*{}</code> - Aplica o estilo em todas as tags</li>
+                <li><code>margin</code> - Aplica um expaçamento externo na tag</li>
+                <li><code>padding</code> - Aplica um expaçamento interno na tag</li>
+                <li><code>background-color</code> - Aplica uma cor de fundo</li>
+                <li><code>box-shadow</code> - Aplica uma sombra na tag</li>
+                <li><code>width</code> - Altera a largura da tag</li>
+                <li><code>height</code> - Altera a altura da tag</li>
+                <li><code>display</code> - Altera o comportamento da tag</li>
+                <li><code>flex-direction</code> - Aplica uma direção na tag</li>
+                <li><code>justify-content</code> - Aplica um alinhamento na horizontal</li> 
+                <li><code>align-items</code> - Aplica um alinhamento na vertical</li>
+                <li><code>border-radius</code> - Aplica uma borda arredondada</li>
+                <li><code>color</code> - Muda a cor dos elementos (textos, linhas, etc)</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
