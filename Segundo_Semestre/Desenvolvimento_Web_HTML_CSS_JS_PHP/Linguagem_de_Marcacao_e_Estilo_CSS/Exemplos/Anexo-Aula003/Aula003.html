@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores e Fontes</title>
+    <!-- Fonte Poppins do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset básico e fonte padrão */
+        * { 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Poppins', Arial, sans-serif;
+        }
+
+        /* Fundo com gradiente fixo */
+        body { 
+            background: linear-gradient(#ffcc00, #ff4f0f) no-repeat center center fixed;
+        }
+
+        /* Linha horizontal customizada */
+        hr {
+            border: none;
+            margin: 10px 0; 
+            width: 90%; 
+            height: 1px;
+            background-color: #ff9900;
+        }
+
+        /* Estilo para blocos de código */
+        code {
+            padding: 4px;
+            background-color: rgb(30, 30, 30);
+            color: white;
+            border-radius: 4px;
+        }
+
+        /* Caixa principal para seções */
+        .box {
+            display: flex;
+            flex-direction: column;
+            background-color: #ffe4e4;
+            margin: 20px auto;
+            width: 90%;
+            padding: 25px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            box-shadow: 0px 0px 10px 5px rgba(199, 199, 199, 0.2);
+        }
+        .box p {
+            width: 80%;
+            text-align: center;
+        }
+
+        /* Tabela estilizada */
+        .tabela {
+            border-collapse: collapse;
+            border: 1px solid #00000051;
+            width: 80%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .tabela th, .tabela td {
+            padding: 8px;
+            border: 1px solid #00000030;
+        }
+        .tabela th {
+            background-color: #ffd580;
+        }
+        .tabela td {
+            width: 50%;
+            height: 48px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- Título principal -->
+        <div class="box">
+            <h1>Cores e fontes</h1>
+        </div>
+
+        <!-- Seção de Cores -->
+        <div class="box">
+            <h2>Cores</h2>
+            <hr>
+            <p>Como vimos na anotação dessa aula, nós podemos chamar as cores de diversas formas em CSS:</p>
+            <hr>
+            <table class="tabela">
+                <thead>
+                    <tr>
+                        <th>Chamada</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>rgb(255, 0, 0)</code></td>
+                        <td style="background-color: rgb(255, 0, 0);"></td>
+                    </tr>
+                    <tr>
+                        <td><code>rgba(255, 0, 0, 0.5)</code></td>
+                        <td style="background-color: rgba(255, 0, 0, 0.5);"></td>
+                    </tr>
+                    <tr>
+                        <td><code>hsl(120, 100%, 50%)</code></td>
+                        <td style="background-color: hsl(120, 100%, 50%);"></td>
+                    </tr>
+                    <tr>
+                        <td><code>hsla(120, 100%, 50%, 0.5)</code></td>
+                        <td style="background-color: hsla(120, 100%, 50%, 0.5);"></td>
+                    </tr>
+                    <tr>
+                        <td><code>#ff09ff</code></td>
+                        <td style="background-color: #ff09ff;"></td>
+                    </tr>
+                    <tr>
+                        <td><code>blue</code></td>
+                        <td style="background-color: blue;"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+        </div>
+
+        <!-- Seção de Gradientes -->
+        <div class="box">
+            <h2>Gradientes</h2>
+            <hr>
+            <p>Aqui estão alguns tipos de gradientes que podemos fazer em CSS:</p>
+            <hr>
+            <table class="tabela">
+                <thead>
+                    <tr>
+                        <th>Chamada</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>linear-gradient(#ffcc00, #ff4f0f)</code></td>
+                        <td style="background: linear-gradient(#ffcc00, #ff4f0f);"></td>
+                    </tr>
+                    <tr>
+                        <td><code>linear-gradient(90deg, #ffcc00, #ff4f0f)</code></td>
+                        <td style="background: linear-gradient(90deg, #ffcc00, #ff4f0f);"></td>
+                    </tr>
+                    <tr>
+                        <td><code>radial-gradient(#ffcc00, #ff4f0f)</code></td>
+                        <td style="background: radial-gradient(#ffcc00, #ff4f0f);"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <p>
+                Isso é só alguns comandos básicos. Para saber mais sobre gradientes,
+                <a href="https://www.w3schools.com/css/css3_gradients.asp" target="_blank">clique aqui</a>.
+            </p>
+        </div>
+
+        <!-- Seção de Fontes -->
+        <div class="box">
+            <h2>Fontes</h2>
+            <hr>
+            <p>Alguns comandos CSS para configurar fontes:</p>
+            <hr>
+            <table class="tabela">
+                <thead>
+                    <tr>
+                        <th>Chamada</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>font-family: 'Arial', 'Poppins', sans-serif;</code></td>
+                        <td style="font-family: 'Arial','Poppins', sans-serif;">
+                            Esse comando define uma família de fontes. Caso a primeira fonte não funcione, ela passa para a segunda e assim por diante.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>font-size: 20px;</code></td>
+                        <td style="font-size: 20px;">Define o tamanho da fonte.</td>
+                    </tr>
+                    <tr>
+                        <td><code>font-weight: bold;</code></td>
+                        <td style="font-weight: bold;">Define o peso da fonte.</td>
+                    </tr>
+                    <tr>
+                        <td><code>font-style: italic;</code></td>
+                        <td style="font-style: italic;">Define o estilo da fonte.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <p>Se quiser saber um pouco mais sobre fontes, <a href="https://www.w3schools.com/cssref/pr_font_family.asp" target="_blank">clique aqui</a>.</p>
+        </div>
+    </main>
+</body>
+</html>
