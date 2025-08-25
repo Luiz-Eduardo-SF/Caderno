@@ -1,49 +1,122 @@
-*{
+/* Reset de margens e preenchimentos padrão */
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    background-color: rgb(0, 123, 255);
-
-    font:normal normal 1em 'Poppins', sans-serif;
+/* Estilo geral do corpo da página */
+body {
+    background-color: rgb(0, 123, 255); /* Fundo azul */
+    font: normal normal 1em 'Poppins', sans-serif; /* Fonte padrão */
 }
 
-main{
-    background-color: white;
-    width: 80%;
+/* Container principal */
+main {
+    background-color: white; /* Fundo branco */
+    width: 80%; /* Largura responsiva */
     height: 100%;
-    margin: auto;
-    padding: 50px;
-    border-radius: 50px;
-    text-align: center;
-
+    margin: auto; /* Centraliza horizontalmente */
+    padding: 50px; /* Espaçamento interno */
+    border-radius: 50px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza texto */
+    justify-content: center; /* Para flexbox (não necessário aqui) */
+    align-items: center; /* Para flexbox (não necessário aqui) */
 }
 
-hr{
+/* Linha horizontal */
+hr {
     width: 100%;
     margin: 10px auto;
 }
 
-h1, h2{
-    margin-bottom:10px;
+/* Títulos e quebras de linha */
+h1, h2, br {
+    margin-bottom: 10px;
 }
 
-code{
+/* Estilo para blocos de código */
+code {
     font: normal normal .8em 'Poppins', sans-serif;
-    margin:2px;
-    padding:2px 5px;
-    background-color:rgb(20, 20, 20);
-    color:white;
-    border-radius:5px;
+    margin: 2px;
+    padding: 2px 5px;
+    background-color: rgb(20, 20, 20); /* Fundo escuro */
+    color: white;
+    border-radius: 5px;
 }
 
-#divbox{
-    width:80px;
-    height:80px;
-    background-color:rgb(0, 123, 255);
-    justify-self: center;
+/* Caixa de exemplo com flexbox */
+#divbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    margin: 10px auto;
+    padding: 25px;
+    background-color: rgb(255, 92, 92); /* Fundo vermelho claro */
+}
+
+/* Parágrafo de exemplo */
+.paraEx {
+    margin-bottom: 16px;
+}
+
+/* Elemento destacado */
+#pseudo-elemento {
+    color: blue;
+}
+
+/* Botões personalizados */
+.buttons {
+    background: rgb(128, 0, 255); /* Fundo roxo */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+/* Efeito hover nos botões */
+.buttons:hover {
+    background: rgb(72, 0, 145); /* Fundo roxo escuro */
+}
+
+/* Container flexível para elementos */
+#display-flex {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+/* Elementos internos do flexbox */
+.flex-elements {
+    background-color: rgb(255, 118, 118); /* Fundo vermelho claro */
+    border: 1px solid rgb(236, 0, 0); /* Borda vermelha */
+    width: 33%;
+    height: 100px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-align:center;
+}
+
+/* Container para grid */
+#display-grid {
+    gap: 6px;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+/* Elementos internos do grid */
+.grid-elements {
+    background-color: rgb(255, 118, 118); /* Fundo vermelho claro */
+    border: 1px solid rgb(236, 0, 0); /* Borda vermelha */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

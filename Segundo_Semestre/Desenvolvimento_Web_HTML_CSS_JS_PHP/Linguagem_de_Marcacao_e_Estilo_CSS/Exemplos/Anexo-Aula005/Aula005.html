@@ -5,41 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conceitos mais avançados</title>
 
+    <!-- Importa o arquivo CSS externo -->
     <link rel="stylesheet" href="Aula005.css">
+
+    <style>
+        /* Pseudo-classe :hover
+           Altera a cor de fundo da div quando o mouse está sobre ela */
+        #divbox:hover {
+            background-color: rgb(109, 109, 254); 
+        }
+
+        /* Pseudo-elemento ::first-line
+           Transforma a primeira linha do parágrafo em maiúscula e vermelha */
+        #pseudo-elemento::first-line {
+            text-transform: uppercase;
+            color: rgb(255, 0, 0);
+        }
+
+        /* Display Flexbox
+           Define o container como flexível e organiza os elementos em coluna */
+        #display-flex {
+            display: flex; /* Ativa o flexbox */
+            flex-direction: column; /* Direção dos itens: coluna (vertical) */
+        }
+
+        /* Display Grid
+           Define o container como grid com 2 colunas e 2 linhas */
+        #display-grid {
+            display: grid; /* Ativa o grid */
+            grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
+            grid-template-rows: repeat(2, 1fr);    /* 2 linhas de tamanho igual */
+        }
+    </style>
 </head>
 <body>
     <main>
-        <div>
+        <!-- Título principal -->
+        <section>
             <h1>Conceitos mais avançados</h1>
             <p>Para não ficar tão confuso, os códigos de estilo para exemplo vão ficar no arquivo <code>.html</code></p>
+        </section>
+        <hr>
 
-        </div>
-        <hr>
-        <div>
-            <h2>Sobre Peseudo-Classes</h2>
-            <p id="pseudo-classe">Esse é um exemplo de um uso da pseudo-classe <code>:hover</code></p>
+        <!-- Seção de Pseudo-Classes -->
+        <section>
+            <h2>Exemplo do uso de Pseudo-Classes</h2>
+            <p class="paraEx">
+                Esse é um exemplo de um uso da pseudo-classe <code>:hover</code>, que estiliza um elemento quando o cursor do mouse estiver sobre ele.
+            </p>
             <div id="divbox">Coloque o mouse aqui</div>
-        </div>
+        </section>
         <hr>
-        <div>
-            <h2>Sobre Peseudo-Elementos</h2>
-            <p>Esse é um exemplo de um uso da pseudo-elemento <code>::first-line</code></p>
-            <p  id="pseudo-elemento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores error tempora sint iusto at voluptatibus facere. Deserunt aliquam, temporibus illum ducimus delectus iusto odio numquam iste, sequi nemo atque accusamus.</p>
-        </div>
+
+        <!-- Seção de Pseudo-Elementos -->
+        <section>
+            <h2>Exemplo do uso de Pseudo-Elementos</h2>
+            <p class="paraEx">
+                Esse é um exemplo de um uso do pseudo-elemento <code>::first-line</code> que estiliza a primeira linha de um parágrafo
+            </p>
+            <p id="pseudo-elemento">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores error tempora sint iusto at voluptatibus facere. Deserunt aliquam, temporibus illum ducimus delectus iusto odio numquam iste, sequi nemo atque accusamus.
+            </p>
+        </section>
         <hr>
-        <div>
+
+        <!-- Seção de Box-model -->
+        <section>
             <h2>Box-model</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, alias illo accusamus itaque, optio ea nihil perferendis quam neque, esse est. Laboriosam expedita cum vel quam in, maxime quasi animi.</p>
-        </div>
+            <p class="paraEx">
+                O box-model é o modelo onde cada elemento é uma caixa, tendo um espaçamento, uma borda, um preenchimento e um conteúdo.
+                <br>
+                <strong>Assim como na imagem a seguir:</strong>
+            </p>
+            <img src="../../img/Aula005-Box_Model.png" alt="Box Model">
+        </section>
         <hr>
-        <div>
+
+        <!-- Seção de Display Flexbox e Grid -->
+        <section>
             <h2>Exemplo de display flexbox</h2>
-            <div class="display-flex"></div>
+            <p class="paraEx">
+                Como dito na anotação dessa aula, o display flexbox funciona com somente uma direção, então temos que escolher entre <code>column(vertical)</code> ou <code>row(horizontal)</code>
+            </p>
+            <button id="flexColumn" class="buttons">Column</button>
+            <button id="flexRow" class="buttons">Row</button>
+            <div id="display-flex">
+                <div class="flex-elements">Elemento 1</div>
+                <div class="flex-elements">Elemento 2</div>
+                <div class="flex-elements">Elemento 3</div>
+                <div class="flex-elements">Elemento 4</div>
+            </div>
             <hr>
+
             <h2>Exemplo de display grid</h2>
-            <div class="display-grid"></div>
+            <p class="paraEx">
+                Como dito na anotação dessa aula, o display grid pode funcionar com as duas direções ao mesmo tempo
+            </p>
+            <div id="display-grid">
+                <div class="grid-elements">Elemento 1</div>
+                <div class="grid-elements">Elemento 2</div>
+                <div class="grid-elements">Elemento 3</div>
+                <div class="grid-elements">Elemento 4</div>
+            </div>
             <hr>
-        </div>
+        </section>
     </main>
+
+    <!-- Script para alternar a direção do flexbox -->
+    <script>
+        const flex = document.getElementById('display-flex');
+        const btnColumn = document.getElementById('flexColumn');
+        const btnRow = document.getElementById('flexRow');
+        btnColumn.addEventListener('click', () => {
+            flex.style.flexDirection = 'column';
+        });
+        btnRow.addEventListener('click', () => {
+            flex.style.flexDirection = 'row';
+        });
+    </script>
 </body>
 </html>

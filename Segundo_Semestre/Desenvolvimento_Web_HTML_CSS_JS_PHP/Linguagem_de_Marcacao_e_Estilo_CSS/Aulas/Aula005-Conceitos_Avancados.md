@@ -14,6 +14,21 @@
 - Pseudo-elementos são usados para estilizar partes especiais de um elemento.
 - Um exemplo é o pseudo-elemento `::first-line`, que estiliza a primeira linha de um parágrafo.
 
+## 🔎 Box-model
+
+- O box-model é o modelo onde cada elemento é uma caixa, tendo um espaçamento, uma borda, um preenchimento e um conteúdo.
+
+- `margin` : É um espaçamento externo
+- `border` : É uma borda ao redor do elemento
+- `padding` : É um espaçamento interno
+- `content` : É o conteúdo do elemento
+
+---
+
+<img src="../img/Aula005-Box_Model.png/">
+
+---
+
 ## 🔎 Display Flex e Grid
 
 - Display, como o próprio nome já indica, define como um elemento deve ser exibido na tela.
