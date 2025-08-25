@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(0, 123, 255);
+
+    font:normal normal 1em 'Poppins', sans-serif;
+}
+
+main{
+    background-color: white;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: 50px;
+    border-radius: 50px;
+    text-align: center;
+
+}
+
+hr{
+    width: 100%;
+    margin: 10px auto;
+}
+
+h1, h2{
+    margin-bottom:10px;
+}
+
+code{
+    font: normal normal .8em 'Poppins', sans-serif;
+    margin:2px;
+    padding:2px 5px;
+    background-color:rgb(20, 20, 20);
+    color:white;
+    border-radius:5px;
+}
+
+#divbox{
+    width:80px;
+    height:80px;
+    background-color:rgb(0, 123, 255);
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
