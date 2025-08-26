@@ -1,0 +1,139 @@
+/* Reset default margin and padding for all elements */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body{
+    font: normal normal 1em 'Poppins', sans-serif; /* Font family and size */
+    background-color: rgb(0, 123, 255);            /* Blue background */
+    height:465vh;                                  /* Tall page for scrolling */
+}
+
+/* Main content area */
+main{
+    width: 80%;                                    /* 80% of viewport width */
+    height: 100%;                                  /* Full height */
+    margin: auto;                                  /* Center horizontally */
+    padding: 50px;                                 /* Inner spacing */
+    border-radius: 50px;                           /* Rounded corners */
+    text-align: center;                            /* Center text */
+    justify-content: center;                       /* Center flex items (if flex) */
+    align-items: center;                           /* Center flex items vertically */
+}
+
+/* Header styles */
+header{
+    display: flex;                                 /* Flexbox layout */
+    flex-direction: row;                           /* Horizontal direction */
+    justify-content: center;                       /* Center items */
+    width: 100%;                                   /* Full width */
+    height: 60px;                                  /* Fixed height */
+    background-color: rgb(255, 255, 255);          /* White background */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);   /* Shadow effect */
+}
+
+/* Headings and paragraphs spacing */
+h1, p{
+    margin:10px;                                   /* Outer spacing */
+}
+
+/* Inline code styles */
+code{
+    background-color: rgb(30, 30, 30);             /* Dark background */
+    color: white;                                  /* White text */
+    padding: 1px 5px;                              /* Inner spacing */
+    border-radius: 5px;                            /* Rounded corners */
+}
+
+/* Generic box for examples */
+.divbox{
+    display: flex;                                 /* Flexbox layout */
+    flex-direction: column;                        /* Vertical stacking */
+    align-items:center;                            /* Center horizontally */
+    justify-content: center;                       /* Center vertically */
+    background-color: white;                       /* White background */
+    border-radius: 50px;                           /* Rounded corners */
+    padding:25px;                                  /* Inner spacing */
+    margin: 20px auto;                             /* Outer spacing, centered */
+    height:200px;                                  /* Fixed height */
+    width: 90%;                                    /* 90% of parent width */
+}
+
+/* Static position example */
+#divStatic{
+    background: rgb(138, 138, 255);                /* Light blue background */
+    width: 100px;                                  /* Fixed width */
+    height: 100px;                                 /* Fixed height */
+    display:flex;                                  /* Flexbox layout */
+    justify-content: center;                       /* Center horizontally */
+    align-items: center;                           /* Center vertically */
+    margin:10px 0 0;                               /* Top margin */
+} 
+#divStatic p{
+    font: normal bolder 1em 'Poppins', sans-serif; /* Bold font */
+    color: white;                                  /* White text */
+    text-align: center;                            /* Center text */
+}
+
+/* Relative position example */
+#divRelative{
+    background: rgb(255, 138, 138);                /* Light red background */
+    width: 100px;                                  /* Fixed width */
+    height: 100px;                                 /* Fixed height */
+    display:flex;                                  /* Flexbox layout */
+    justify-content: center;                       /* Center horizontally */
+    align-items: center;                           /* Center vertically */
+    margin:10px 0 0;                               /* Top margin */
+} 
+#divRelative p{
+    font: normal bolder 1em 'Poppins', sans-serif; /* Bold font */
+    color: white;                                  /* White text */
+    text-align: center;                            /* Center text */
+}
+
+/* Absolute position example */
+#divAbsolute{
+    background: rgb(0, 179, 0);                    /* Green background */
+    width: 100px;                                  /* Fixed width */
+    height: 100px;                                 /* Fixed height */
+    display:flex;                                  /* Flexbox layout */
+    justify-content: center;                       /* Center horizontally */
+    align-items: center;                           /* Center vertically */
+} 
+#divAbsolute p{
+    font: normal bolder 1em 'Poppins', sans-serif; /* Bold font */
+    color: white;                                  /* White text */
+    text-align: center;                            /* Center text */
+}
+
+/* Sticky box container for scrolling demonstration */
+#divStickyBox{
+    height:1800px;                                 /* Tall container */
+}
+
+/* Example space container */
+#divExampleSpace{
+    height: 100%;                                  /* Full height */
+    width: 100%;                                   /* Full width */
+    display:flex;                                  /* Flexbox layout */
+    flex-direction: column;                        /* Vertical stacking */
+    align-items: center;                           /* Center horizontally */
+    justify-content: top;                          /* Align items to top */
+}
+
+/* Sticky position example */
+#divSticky{
+    background: rgb(113, 46, 201);                 /* Purple background */
+    width: 100px;                                  /* Fixed width */
+    height: 100px;                                 /* Fixed height */
+    display:flex;                                  /* Flexbox layout */
+    justify-content: center;                       /* Center horizontally */
+    align-items: center;                           /* Center vertically */
+} 
+#divSticky p{
+    font: normal bolder 1em 'Poppins', sans-serif; /* Bold font */
+    color: white;                                  /* White text */
+    text-align: center;                            /* Center text */
+}

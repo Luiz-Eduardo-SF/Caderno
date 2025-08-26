@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <link rel="stylesheet" href="Aula006.css">
+
+    <style>
+        header{
+            position:fixed; /* Fixa o cabeçalho no topo da tela, mesmo durante o scroll */
+            top: 0;         /* Alinha o cabeçalho ao topo da janela */
+            left: 0;        /* Alinha o cabeçalho à esquerda da janela */
+            z-index: 5;     /* Garante que o cabeçalho fique acima de outros elementos */
+        }
+
+        #divStatic{
+            position: static; /* Posição padrão, segue o fluxo normal do documento */
+        }
+
+        #divRelative{
+            position: relative; /* Permite mover o elemento em relação à sua posição original */
+            /* Se Divirta alterando os valores abaixo e vendo o que acontece:*/
+            top: 0;            /* Não move o elemento verticalmente */
+            left: 0;           /* Não move o elemento horizontalmente */
+        }
+
+        #divAbsolute{
+            position: absolute; /* Posiciona o elemento em relação ao elemento pai posicionado ou ao body */
+            top: 770px;         /* Move o elemento 770px para baixo do topo */
+            left: 80%;          /* Move o elemento 80% para a direita da largura do elemento pai */
+        }
+
+        #divSticky{
+            position: sticky; /* Alterna entre relative e fixed conforme o scroll */
+            top: 0;           /* Fixa o elemento ao topo quando atinge esse ponto no scroll */
+            z-index: 6;       /* Garante que o elemento fique acima de outros elementos */
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Sobre Positions</h1></header>
+    <main>
+        <div class="divbox">
+            <h2>Position Static</h2>
+            <p>A <code>position: static;</code> é a posição padrão de um elemento, ou seja, por se tratar de uma posição padrão, ela nem precisa ser declarada.</p>
+            <div id="divStatic"><p>Position Static</p></div>
+        </div>
+
+        <div class="divbox">
+            <h2>Position Relative</h2>
+            <p>A <code>position: relative;</code> define uma posição a partir da sua posição natural (static).</p>
+            <div id="divRelative"><p>Position Relative</p></div>
+        </div>
+
+        <div class="divbox">
+            <h2>Position Absolute</h2>
+            <p>A <code>position: absolute;</code> posiciona o elemento em relação ao elemento pai posicionado ou, na ausência deste, em relação à tag &lt;body&gt;.</p>
+            <div id="divAbsolute"><p>Position Absolute</p></div>
+        </div>
+
+        <div class="divbox">
+            <h2>Position Fixed</h2>
+            <p>A <code>position: fixed;</code> posiciona o elemento em relação ao viewport(tela).</p>
+            <p><strong>O cabeçalho desse site é o próprio exemplo de posição fixed</strong></p>
+        </div>
+
+        <div class="divbox" id="divStickyBox">
+            <h2>Position Sticky</h2>
+            <p>A <code>position: sticky;</code> altera entre <code>position: relative;</code> e <code>position: fixed;</code>, permanecendo no lugar definido até que o scroll ultrapasse esse ponto, quando então fica fixa na tela.</p>
+
+            <div id="divExampleSpace">
+                <div id="divSticky"><p>Position Sticky</p></div>
+            </div>
+
+            <p><strong>Viu que legal?? É importante que o elemento pai do elemento de sticky tenha uma altura ou largura sulficiente para que o elemento possa se mover também.</strong></p>
+        </div>
+    </main>
+</body>
+</html>
