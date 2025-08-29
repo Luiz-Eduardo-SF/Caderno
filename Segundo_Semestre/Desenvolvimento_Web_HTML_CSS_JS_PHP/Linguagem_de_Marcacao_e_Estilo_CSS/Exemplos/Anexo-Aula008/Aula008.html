@@ -6,93 +6,98 @@
     <link rel="stylesheet" href="Aula008.css">
     <title>CSS Grid</title>
 
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <style>
-        .border{
+        /* Adiciona borda preta */
+        .border {
             border: 1px solid black;
         }
 
+        /* Estiliza as linhas */
         .row {
             background: rgb(104, 101, 101);
             color: white;
-
             text-align: center;
         }
 
-        body{
+        /* Estiliza o corpo da página */
+        body {
             background: lightseagreen;
-            gap: 100px;
         }
-
     </style>
 </head>
 <body>
+    <!-- Grid 1 -->
     <div class="grid1">
         <h1>Grid 1</h1>
         <div class="container border">
-        
-        <div class="row border">
-            <h2>Container 1</h2>
-        </div>
+            <!-- Primeira linha do Grid 1 -->
+            <div class="row border">
+                <h2>Container 1</h2>
+            </div>
 
-        <div class="row border">
-            <div class="col border">
-                <p>Coluna 1</p>
+            <!-- Segunda linha do Grid 1 -->
+            <div class="row border">
+                <div class="col border">
+                    <p>Coluna 1</p>
+                </div>
+                <div class="col border">
+                    <p>Coluna 2</p>
+                </div>
             </div>
-            <div class="col border">
-                <p>Coluna 2</p>
-            </div>
-        </div>
 
-        <div class="row border">
-            <div class="col border">
-                <p>Coluna 1</p>
-            </div>
-            <div class="col border">
-                <p>Coluna 2</p>
-            </div>
-            <div class="col border">
-                <p>Coluna 3</p>
+            <!-- Terceira linha do Grid 1 -->
+            <div class="row border">
+                <div class="col border">
+                    <p>Coluna 1</p>
+                </div>
+                <div class="col border">
+                    <p>Coluna 2</p>
+                </div>
+                <div class="col border">
+                    <p>Coluna 3</p>
+                </div>
             </div>
         </div>
     </div>
-    </div>
 
-
+    <!-- Grid 2 -->
     <div class="grid2">
+        <h1>Grid 2</h1>
+        <div id="container-fluid">
+            <!-- Primeira linha do Grid 2 -->
+            <div class="row border">
+                <h2>Container 2</h2>
+            </div>
 
-    <h1>Grid 2</h1>
-
-    <div id="grid2_grid">
-        <div class="row border">
-        <h1>Container 2</h1>
-    </div>
-
-    <div class="row border">
-        <div class="col border">
-            <p>Coluna 1</p>
+            <!-- Segunda linha do Grid 2 -->
+            <div class="row border">
+                <div class="col-6 border">
+                    <p>Coluna 1</p>
+                </div>
+                <div class="col-3 border">
+                    <p>Coluna 2</p>
+                </div>
+                <div class="col-3 border">
+                    <p>Coluna 3</p>
+                </div>
+            </div>
+            
+            <!-- Terceira linha do Grid 2 -->
+            <div class="row border">
+                <div class="col-2 border">
+                    <p>Coluna 1</p>
+                </div>
+                <div class="col-5 border">
+                    <p>Coluna 2</p>
+                </div>
+                <div class="col-5 border">
+                    <p>Coluna 3</p>
+                </div>
+            </div>
         </div>
-        <div class="col border">
-            <p>Coluna 2</p>
-        </div>
-        <div class="col border">
-            <p>Coluna 3</p>
-        </div>
-    </div>
-    
-    <div class="row border">
-        <div class="col border">
-            <p>Coluna 1</p>
-        </div>
-        <div class="col border">
-            <p>Coluna 2</p>
-        </div>
-        <div class="col border">
-            <p>Coluna 3</p>
-        </div>
-    </div>
-    </div>
     </div>
 </body>
 </html>
