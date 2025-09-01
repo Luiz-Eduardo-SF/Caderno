@@ -77,4 +77,88 @@ h1, h2, h3 {color: red;} /*Formatar diversas tags ao mesmo tempo*/
 
 p::after{content: 'Obrigado!'} /*Formata algo após, mas dentro, de um elemento*/
 ```
+
+---
+
+## Acesso aos elementos via JavaScript
+
+### Principais métodos de seleção:
+
+- ``getElementByTagName('')`` &rarr; Permite com que a gente tenha acesso aos elementos pelo nome da tag.
+
+- ``getElementById('')`` &rarr; Permite com que a gente tenha acesso aos elementos pelo id.
+
+- ``getElementsByClassName('')`` &rarr; Permite com que a gente tenha acesso aos elementos pela class.
+
+- ``getElementByName('')`` &rarr; Permite com que a gente tenha acesso aos elementos pelo name de um elemento.
+
+---
+
+### Exemplo de seleção de elementos
+
+---
+
+```js
+let p1 = document.getElementById('p1'); // Pegar um elemento de id="p1" e armazena em uma variável de mesmo nome.
+
+p1.innerHTML = '<p>Olá Mundo!!!</p>'; // Atualizar o conteúdo de um elemento.
+```
+
+Esse código simples é bem útil caso você queira fazer uma alteração curta em um elemento HTML.
+
+----
+
+## Funções
+
+Funções em todas as linguagens de programação são blocos de códigos que tem uma determinada tarefa, elas podem ou não ter parâmetros e podem ou não retornar algum valor.
+
+Então toda vez que uma função for chamada, todo o código que está dentro dela vai ser executada
+
+### Um exemplo de uma função em JavaScript:
+
+```js
+function minhaFuncao(n1, n2){
+    let soma = n1 + n2;
+    console.log(soma);
+}
+
+minhaFuncao(1, 2);
+```
+
+> Nesse exemplo eu criei uma função simples em JS no qual recebe dois valores e retorna a soma deles no console.<br><br>Então quando eu chamo essa função, ela pega os valores que eu mandei, altera os n1, n2 por esses valores respectivamente e soma eles.
+
+---
+
+### Formas de criar funções:
+
+---
+
+Atualmente existem duas formas de criar funções no JavaScript:
+
+---
+
+
+#### Formato tradicional (Antigo)
+
+---
+
+```js
+function soma(n1, n2){ // Declara a função com dois parametros
+    let n3 = n1 + n2; // Armazena a soma dos parametros em uma variavel
+    alert('A soma dos números é igual a: ${n3}'); // Alerta o resultado da soma
+}
+```
+
+
+#### Arrow Function (Novo)
+
+---
+
+```js
+const soma = (n1, n2) => { // Declara a função alertando que ela vai receber dois parametros
+    let n3 = n1 + n2; // Armazena a soma dos parametros em uma variavel
+    alert('A soma dos números é igual a: ${n3}'); // Alerta o resultado da soma
+}
+```
+
 ---
