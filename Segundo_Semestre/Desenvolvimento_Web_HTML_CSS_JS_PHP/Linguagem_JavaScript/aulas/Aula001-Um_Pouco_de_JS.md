@@ -1,123 +1,111 @@
-# Primeira aula sobre JavaScript
+# 🟡 Primeira aula sobre JavaScript
 
-Como nessa aula teve diversos assuntos, essa aula acabou não tendo algo tão definido como as outras anteriores.
+> *Aviso breve:*
+Como esta aula abordou diversos assuntos, ela acabou não tendo um foco tão definido como as anteriores.
 
-## O que é JavaScript?
+## 💡 O que é JavaScript?
 
-De uma forma resumida, o JavaScript é uma linguagem de programação que é capaz de rodar tanto em navegadores, quanto em servidores através do node.js.
+De forma resumida, JavaScript é uma linguagem de programação capaz de rodar tanto em navegadores quanto em servidores, através do Node.js.
 
-Ele serve para muita coisa, mas o uso dele no front-end é mais voltado para a interação com o usuário e a manipulação de elementos HTML. Como animações, utilidades, efeitos etc. 
+No front-end, seu uso é voltado principalmente para interação com o usuário e manipulação de elementos HTML, como animações, utilidades, efeitos etc.
 
-Ela é muito usada também para criar conexõos com servidores via APIs para a utilização de dados.
+Também é muito utilizada para criar conexões com servidores via APIs, permitindo o uso de dados externos.
 
-Um exemplo muito bom de um site muito usado todos os dias por milhares de pessoas é o youtube, onde conecta seu site a sua conta e te manda diversos vídeos dentro da biblioteca da plataforma.
+Um exemplo prático é o YouTube, que conecta o site à sua conta e exibe vídeos da biblioteca da plataforma.
 
 ---
 
-## Árvore DOM
+## 🌳 Árvore DOM
 
-A Árvore DOM (Document Object Model) representa a estrutura HTML como se fosse uma raiz de árvore, onde cada elemento é um ``Node (nó)``, e quanto mais conteúdo tiver mais ramificações vão existir, como podemos observar no exemplo abaixo feito por mim: 
+A Árvore DOM (Document Object Model) representa a estrutura HTML como uma árvore, onde cada elemento é um **nó** (`Node`). Quanto mais conteúdo, mais ramificações existirão, como no exemplo abaixo:
 
 <img src="../img/DOM_Tree_By_Me.png">
 
-Nesse exemplo temos uma página simples, onde os Elementos são as tags com seus atributos e conteúdos.
+Nesse exemplo, temos uma página simples, onde os elementos são as tags com seus atributos e conteúdos.
 
 ---
 
-### Para que serve?
+### ❓ Para que serve?
+
+- Mostra o mapa interno que o navegador cria da página (elementos HTML em hierarquia).
+- Permite que o JavaScript altere conteúdo/estilos dinamicamente.
+- Garante interatividade (cliques, formulários etc.).
+- É a ponte entre HTML, CSS e JavaScript.
 
 ---
 
-- Além de mostrar o mapa interno que o navegador cria da página (elementos HTML como nós em hierarquia).
-
-- Ela também permite que o JavaScript altere conteúdo/estilos dinamicamente.
-
-- Garante interatividade (cliques, formulários etc.)
-
-- E de forma bem resumida, ela é a ponte entre o HTML, CSS e JavaScript.
-
----
-
-## Seletores
+## 🏷️ Seletores
 
 Seletores são usados para selecionar elementos HTML e manipular seus estilos, conteúdos etc.<br>
-Existem três tipos de seletores, sendo eles:
+Existem três tipos principais de seletores:
 
-- ``Tags do HTML`` &rarr; Onde usamos o nome da tag, como por exemplo: `p` para parágrafos.
-
-- `Classes CSS` &rarr; Onde usamos o nome da classe atribuida aos elementos.
-
-- `Identificadores` &rarr; Onde usamos o id atribuido ao elemento.
+- **Tags do HTML** &rarr; Usamos o nome da tag, por exemplo: `p` para parágrafos.
+- **Classes CSS** &rarr; Usamos o nome da classe atribuída aos elementos.
+- **Identificadores (ID)** &rarr; Usamos o id atribuído ao elemento.
 
 ---
 
-### Por exemplo:
+### 📋 Exemplos
 
 ```css
-p { color: red;} /*Aqui usamos a tag <p>, assim o estilo vai ser aplicado a todas as tags <p>.*/
+p { color: red;} /* Aplica o estilo a todas as tags <p>. */
 
-.negrito{ font-weight: bold;} /*Aqui todos as tags que tiverem a class="negrito" terão o estilo aplicado.*/
+.negrito { font-weight: bold;} /* Aplica o estilo a todos os elementos com class="negrito". */
 
-#principal{ color: green;} /*Aqui a tag com o id="principal" terá o estilo aplicado.*/
+#principal { color: green;} /* Aplica o estilo ao elemento com id="principal". */
 ```
 
-Isso nos permite selecionar expecificamente o elemento que queremos modificar, podendo ser eles todos, alguns ou apenas um.
+Esses seletores permitem modificar elementos específicos, seja todos, alguns ou apenas um.
 
-
-### Outros exemplos:
+#### Outros exemplos
 
 ```css
-a:hover { color: red;} /*Aqui usamos a pseudo-classe :hover, que estiliza um elemento quando o cursor do mouse estiver sobre ele.*/
+a:hover { color: red;} /* Estiliza o elemento quando o cursor está sobre ele. */
 
-h1, h2, h3 {color: red;} /*Formatar diversas tags ao mesmo tempo*/
+h1, h2, h3 { color: red;} /* Formata várias tags ao mesmo tempo. */
 
-#c1 p a{color: red;} /*Formata uma tag <a> dentro de uma tag <p> dentro da tag com id="c1"*/
+#c1 p a { color: red;} /* Formata uma tag <a> dentro de <p> dentro do elemento com id="c1". */
 
-.dark:first-child{color: red;} /*Formata o primeiro filho de uma tag com a class="dark"*/
+.dark:first-child { color: red;} /* Formata o primeiro filho de um elemento com class="dark". */
 
-p::after{content: 'Obrigado!'} /*Formata algo após, mas dentro, de um elemento*/
+p::after { content: 'Obrigado!'; } /* Adiciona conteúdo após o elemento <p>. */
 ```
 
 ---
 
-## Acesso aos elementos via JavaScript
+## 🖱️ Acesso aos elementos via JavaScript
 
-### Principais métodos de seleção:
+### Principais métodos de seleção
 
-- ``getElementByTagName('')`` &rarr; Permite com que a gente tenha acesso aos elementos pelo nome da tag.
-
-- ``getElementById('')`` &rarr; Permite com que a gente tenha acesso aos elementos pelo id.
-
-- ``getElementsByClassName('')`` &rarr; Permite com que a gente tenha acesso aos elementos pela class.
-
-- ``getElementByName('')`` &rarr; Permite com que a gente tenha acesso aos elementos pelo name de um elemento.
+- `getElementsByTagName('')` &rarr; Seleciona elementos pelo nome da tag.
+- `getElementById('')` &rarr; Seleciona elemento pelo id.
+- `getElementsByClassName('')` &rarr; Seleciona elementos pela classe.
+- `getElementsByName('')` &rarr; Seleciona elementos pelo atributo name.
 
 ---
 
-### Exemplo de seleção de elementos
-
----
+### 📝 Exemplo de seleção de elementos
 
 ```js
-let p1 = document.getElementById('p1'); // Pegar um elemento de id="p1" e armazena em uma variável de mesmo nome.
+let p1 = document.getElementById('p1'); // Seleciona o elemento com id="p1" e armazena na variável p1.
 
-p1.innerHTML = '<p>Olá Mundo!!!</p>'; // Atualizar o conteúdo de um elemento.
+p1.innerHTML = '<p>Olá Mundo!!!</p>'; // Atualiza o conteúdo do elemento.
 ```
 
-Esse código simples é bem útil caso você queira fazer uma alteração curta em um elemento HTML.
+Esse código é útil para fazer alterações rápidas em elementos HTML.
 
-----
+---
 
-## Funções
+## 🧩 Funções
 
-Funções em todas as linguagens de programação são blocos de códigos que tem uma determinada tarefa, elas podem ou não ter parâmetros e podem ou não retornar algum valor.
+Funções são blocos de código que executam uma tarefa específica. Elas podem ou não receber parâmetros e retornar valores.
 
-Então toda vez que uma função for chamada, todo o código que está dentro dela vai ser executada
+Sempre que uma função é chamada, todo o código dentro dela é executado.
 
-### Um exemplo de uma função em JavaScript:
+### Exemplo de função em JavaScript
 
 ```js
-function minhaFuncao(n1, n2){
+function minhaFuncao(n1, n2) {
     let soma = n1 + n2;
     console.log(soma);
 }
@@ -125,40 +113,112 @@ function minhaFuncao(n1, n2){
 minhaFuncao(1, 2);
 ```
 
-> Nesse exemplo eu criei uma função simples em JS no qual recebe dois valores e retorna a soma deles no console.<br><br>Então quando eu chamo essa função, ela pega os valores que eu mandei, altera os n1, n2 por esses valores respectivamente e soma eles.
+> Neste exemplo, a função recebe dois valores e exibe a soma deles no console.
 
 ---
 
-### Formas de criar funções:
+### 🛠️ Formas de criar funções
 
----
+Atualmente, existem duas formas principais de criar funções em JavaScript:
 
-Atualmente existem duas formas de criar funções no JavaScript:
-
----
-
-
-#### Formato tradicional (Antigo)
-
----
+#### Formato tradicional
 
 ```js
-function soma(n1, n2){ // Declara a função com dois parametros
-    let n3 = n1 + n2; // Armazena a soma dos parametros em uma variavel
-    alert('A soma dos números é igual a: ${n3}'); // Alerta o resultado da soma
+function soma(n1, n2) { // Declara a função com dois parâmetros
+    let n3 = n1 + n2; // Soma os parâmetros
+    alert(`A soma dos números é igual a: ${n3}`); // Exibe o resultado
 }
 ```
 
+#### Arrow Function
 
-#### Arrow Function (Novo)
+```js
+const soma = (n1, n2) => { // Função que recebe dois parâmetros
+    let n3 = n1 + n2; // Soma os parâmetros
+    alert(`A soma dos números é igual a: ${n3}`); // Exibe o resultado
+}
+```
+
+*Comentário:* Use crase (\`) para interpolação de variáveis em strings (template literals), não aspas simples.
 
 ---
 
-```js
-const soma = (n1, n2) => { // Declara a função alertando que ela vai receber dois parametros
-    let n3 = n1 + n2; // Armazena a soma dos parametros em uma variavel
-    alert('A soma dos números é igual a: ${n3}'); // Alerta o resultado da soma
-}
+## 🖥️ Interatividade no HTML
+
+Com JavaScript, é possível criar diversas interatividades no HTML, como:
+
+- Componentes de entrada e caixas de diálogo
+- Utilização de eventos
+- Resposta a eventos com funções em JS
+- Associação dinâmica, como ocorre no jQuery
+
+```javascript
+$("#cmd1").on("click", (event) => { 
+    hiddenBox.show();
+});
 ```
+
+*Comentário:* O exemplo acima utiliza jQuery para mostrar um elemento ao clicar em outro.
+
+---
+
+## 🗂️ Alguns eventos do HTML
+
+| Comando      | Evento                        |
+|:------------:|:----------------------------:|
+| `onLoad`     | Carregamento da página        |
+| `onClick`    | Quando um elemento é clicado  |
+| `onDblClick` | Quando um elemento é clicado duas vezes |
+| `onSubmit`   | Quando um formulário é enviado|
+| `onChange`   | Alteração de um elemento      |
+| `onBlur`     | Quando perde o foco           |
+| `onFocus`    | Quando recebe foco            |
+| `onKeyPress` | Quando uma tecla é pressionada|
+| `onMouseOver`| Quando o mouse está sobre o elemento |
+| `onMouseOut` | Quando o mouse sai do elemento|
+
+---
+
+## 🛠️ Interação e modificação via JS
+
+```html
+<html>
+    <body>
+        <div id="d1">Conteúdo Original</div>
+        <button onClick="alterar()">Clique Aqui</button>
+        
+        <script>
+            const alterar = () => {
+                let d1 = document.getElementById('d1');
+                d1.innerHTML = "Conteúdo Alterado";
+                d1.style.backgroundColor = "yellow";
+            }
+        </script>
+    </body>
+</html>
+```
+
+---
+
+Nesse exemplo, mostramos uma estrutura simples de `HTML` e `JS`, na qual, a partir de comandos em JS, alteramos o conteúdo e a cor de um elemento HTML com a chamada da função `alterar()` ao clicar no botão.
+
+> Uma demonstração desse site pode ser encontrada na pasta de exemplos no Anexo da aula!
+
+---
+
+## ✅ Conclusão
+
+Nesta aula extensa, abordamos diversos tópicos de JavaScript, como:
+
+- O que é JavaScript?
+- Árvore DOM
+- Seletores
+- Acesso aos elementos via JavaScript
+- Funções
+- Interatividade no HTML
+- Alguns eventos do HTML
+- Interação e modificação via JS
+
+Agora é hora de colocar em prática o que vimos, explorar mais um pouco e se preparar para a próxima aula!
 
 ---

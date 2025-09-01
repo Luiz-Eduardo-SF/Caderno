@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de comandos JS</title>
+</head>
+<body>
+    <div id="d1">Conteúdo Original</div> <!-- Div com id="d1"-->
+    <button onclick="alterar()">Clique aqui!</button> <!-- Botão que chama a função alterar()-->
+    <button onclick="voltar()">Voltar</button> <!-- Botão que chama a função voltar()-->
+
+    <script>
+        const alterar = () => { // Criando a função alterar()
+            let d1 = document.getElementById('d1'); // Armazenando a div a partir da id em uma variável de mesmo nome
+            d1.innerHTML = "Conteúdo Alterado"; // Alterando o conteúdo da div
+            d1.style.backgroundColor = "yellow"; // Alterando a cor de fundo da div
+        }
+
+        const voltar = () => { // Criando a função voltar()
+            location.reload(); // Recarrega a guia
+        }
+    </script>
+</body>
+</html>
