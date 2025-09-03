@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!-- Bootstrap CSS para estilização -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body class="container">
+    <!-- Formulário da calculadora -->
+    <form class="form m-2">
+        <!-- Campo para o primeiro valor -->
+        <label class="form-label" for="v1">Primeiro Valor</label>
+        <input class="form-control" type="number" id="v1">
+
+        <!-- Campo para o segundo valor -->
+        <label class="form-label" for="v2">Segundo Valor</label>
+        <input class="form-control" type="number" id="v2">
+
+        <!-- Seleção da operação -->
+        <label class="form-label" for="oper">Operação</label>
+        <select class="form-select" id="oper">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="^">^</option>
+        </select>
+
+        <!-- Botão para calcular -->
+        <button type="button" class="btn btn-primary m-2" onclick="calcular()">Calcular</button>
+
+        <!-- Área para exibir o resultado -->
+        <div class="alert alert-success" id="d1">O resultado vai aparecer aqui!!</div>
+    </form>
+
+    <script>
+        // Função principal de cálculo
+        const calcular = () => {
+            // Obtendo valores dos campos
+            const v1 = Number(document.getElementById("v1").value);
+            const v2 = Number(document.getElementById("v2").value);
+            const oper = document.getElementById("oper").value;
+
+            // Funções para cada operação
+            const somar = (a, b) => a + b;
+            const subtrair = (a, b) => a - b;
+            const multiplicar = (a, b) => a * b;
+            const dividir = (a, b) => a / b;
+            const potencia = (a, b) => Math.pow(a, b);
+
+            let res = 0;
+
+            // Seleciona a operação conforme o valor escolhido
+            switch (oper) {
+                case "+": res = somar(v1, v2); break;
+                case "-": res = subtrair(v1, v2); break;
+                case "*": res = multiplicar(v1, v2); break;
+                case "/": res = dividir(v1, v2); break;
+                case "^": res = potencia(v1, v2); break;
+                default: res = "Operação inválida";
+            }
+
+            // Exibe o resultado na tela
+            document.getElementById("d1").innerHTML = `O resultado da conta é: ${res}`;
+        }
+    </script>
+</body>
+</html>
