@@ -124,3 +124,5 @@ const situacao = (valor_imc) => {
 
 O resultado desta aula pode ser encontrado na página de exemplos (Anexo-aula005)!
 Espero que tenha gostado desta anotação, e lembre-se sempre de colocar em prática tudo o que estuda para evoluir e aprender cada vez mais.
+
+---
