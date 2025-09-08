@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body class="container">
+    <h1 class="text-center">Calculadora IMC</h1>
+    <hr>
+    <fieldset>
+        <legend class="text-center">Valores</legend>
+        <!-- Campo para o peso -->
+        <label for="id_peso" class="form-label">Peso (kg):</label>
+        <input type="number" id="id_peso" class="form-control" min="0" step="any"> <br>
+        <!-- Campo para a altura -->
+        <label for="id_altura" class="form-label">Altura (m):</label>
+        <input type="number" id="id_altura" class="form-control" min="0" step="any"> <br>
+        <!-- Botão para calcular -->
+        <button onclick="executar()" class="btn btn-primary m-2">Calcular</button>
+    </fieldset>
+    <hr>
+    <!-- Área para mostrar o resultado -->
+    <div id="res" class="alert alert-success">
+        O Resultado vai aparecer aqui !!!
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Script principal -->
+    <script>
+
+        // Função executada ao clicar no botão
+        const executar = () => {
+            // Obtém os valores dos campos
+            const peso = Number(document.getElementById("id_peso").value);
+            const altura = Number(document.getElementById("id_altura").value);
+            const resposta = document.getElementById("res");
+
+            // Validação simples dos campos
+            if (peso <= 0 || altura <= 0) {
+                resposta.innerHTML = "Por favor, insira valores válidos para peso e altura.";
+                return;
+            }
+
+            // Calcula o IMC e a situação
+            const imc_res = imc(peso, altura).toFixed(2);
+            const situacao_res = situacao(imc_res);
+
+            // Exibe o resultado
+            resposta.innerHTML = `Seu IMC: <strong>${imc_res}</strong> - ${situacao_res}`;
+        }
+    </script>
+</body>
+</html>
