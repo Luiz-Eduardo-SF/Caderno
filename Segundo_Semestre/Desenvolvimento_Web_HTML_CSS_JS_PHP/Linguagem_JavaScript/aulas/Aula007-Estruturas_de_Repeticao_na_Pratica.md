@@ -65,9 +65,23 @@ const fibonacci = (x) => { // Cria uma função fibonacci que recebe um valor
 }
 ```
 
-|f1|f2|fm|
-|:-:|:-:|:-:|
-|1|1|2|
-|1|2|3|
-|2|3|5|
-|3|5|8|
+<table border="1" cellspacing="0" cellpadding="4" width="100%" style="text-align: center;">
+    <tr style="text-align:center;">
+        <th>fm1</th><th>fm2</th><th>fm3</th>
+    </tr>
+    <tr>
+        <td>1</td><td>1</td><td>2</td>
+    </tr>
+    <tr>
+        <td>1</td><td>2</td><td>3</td>
+    </tr>
+    <tr>
+        <td>2</td><td>3</td><td>5</td>
+    </tr>
+    <tr>
+        <td>3</td><td>5</td><td>8</td>
+    </tr>
+    <tr>
+        <td>5</td><td>8</td><td>13</td>
+    </tr>
+</table>
