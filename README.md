@@ -1,10 +1,9 @@
-# Olá! Seja bem-vindo(a) ao meu caderno virtual
+# ⚠️ Aviso muito importante
 
-Esta é a atualização do meu caderno virtual. Nas férias, eu dei uma parada nas atualizações e estou voltando agora.
+Gostaria de informar a todos que acompanham as anotações diárias que venho publicando neste repositório. Devido à divulgação das datas das minhas provas, percebi que, mesmo mantendo o ritmo de uma aula e exercícios por dia, talvez não consiga concluir todo o conteúdo a tempo. Por isso, infelizmente, terei que fazer resumos menos aprofundados, sem muitos exemplos ou imagens, pois esses detalhes consomem grande parte do meu tempo.
 
-Lembrando que estas são anotações pessoais, então pode haver algumas coisas que não estão 100% corretas. 
-> (Ex.: ortografia, resumos, etc.)
-
-Estou com este projeto tanto para ajudar algumas pessoas que querem aprender mais sobre algum conteúdo abordado quanto para salvar minhas anotações na nuvem.
+Espero que compreendam. Se tudo correr bem, continuarei publicando minhas anotações aqui, porém com menos detalhes, como mencionei. Pretendo estudar cerca de três aulas por dia, com três exercícios também, mas não tenho certeza se conseguirei publicar essa mesma quantidade diariamente.
 
 ---
+
+## ! Muito obrigado pela atenção e compreensão !
