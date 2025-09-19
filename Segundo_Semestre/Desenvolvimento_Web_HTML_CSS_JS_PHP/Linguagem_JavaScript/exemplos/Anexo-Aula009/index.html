@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela colorida</title>
+
+    <style>
+        p{color: rgb(151, 71, 255);}
+    </style>
+</head>
+<body>
+    <table cellspacing="5" cellpadding="9" style="width: 100%; height: 50%;">
+
+    <script>
+        const cores = ["71, 154, 255" , "108, 71, 255" , "151, 71, 255"];
+        for (let i = 0; i < 10; i++){
+            document.write("<tr>");
+            for (let j = 0; j < 10; j++){
+                let pos = Math.trunc(Math.random() * 3);
+                document.write(`<td style="background-color: rgb(${cores[pos]});"> &nbsp; </td>`);
+            }
+            document.write("</tr>");
+        }
+    </script>
+</body>
+</html>
